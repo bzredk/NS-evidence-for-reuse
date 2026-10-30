@@ -1,0 +1,45 @@
+[
+  [
+    "inproceedings",
+    "ross2011dagger",
+    {
+      "title": "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning",
+      "author": "Ross, Stéphane and Gordon, Geoffrey J. and Bagnell, J. Andrew",
+      "booktitle": "Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics",
+      "series": "Proceedings of Machine Learning Research",
+      "volume": "15",
+      "pages": "627--635",
+      "year": "2011",
+      "url": "https://proceedings.mlr.press/v15/ross11a.html",
+      "note": "Author names follow the primary PDF; the publication page uses shorter given names"
+    }
+  ],
+  [
+    "article",
+    "judah2014active",
+    {
+      "title": "Active Imitation Learning: Formal and Practical Reductions to {I.I.D.} Learning",
+      "author": "Judah, Kshitij and Fern, Alan P. and Dietterich, Thomas G. and Tadepalli, Prasad",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "15",
+      "number": "120",
+      "pages": "4105--4143",
+      "year": "2014",
+      "url": "https://www.jmlr.org/papers/v15/judah14a.html"
+    }
+  ],
+  [
+    "inproceedings",
+    "zhang2017safe",
+    {
+      "title": "Query-Efficient Imitation Learning for End-to-End Simulated Driving",
+      "author": "Zhang, Jiakai and Cho, Kyunghyun",
+      "booktitle": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "volume": "31",
+      "number": "1",
+      "year": "2017",
+      "doi": "10.1609/aaai.v31i1.10857",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/10857"
+    }
+  ]
+]

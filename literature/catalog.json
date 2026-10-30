@@ -1,0 +1,552 @@
+{
+  "updated_date": "2026-10-30",
+  "references": [
+    {
+      "key": "lake2015bpl",
+      "category": "Skill representations",
+      "citation": {
+        "type": "article",
+        "title": "Human-level concept learning through probabilistic program induction",
+        "author": "Lake, Brenden M. and Salakhutdinov, Ruslan and Tenenbaum, Joshua B.",
+        "year": "2015",
+        "doi": "10.1126/science.aab3050",
+        "url": "https://doi.org/10.1126/science.aab3050",
+        "journal": "Science",
+        "volume": "350",
+        "number": "6266",
+        "pages": "1332--1338"
+      },
+      "use": "Compositional programs and learned priors for concept learning.",
+      "limitation": "Experiments use handwritten characters.",
+      "reading_scope": "BPL construction, Figures 3 and 6, and structural ablations.",
+      "metadata_check_date": "2026-10-17",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "ellis2021dreamcoder",
+      "category": "Skill representations",
+      "citation": {
+        "type": "inproceedings",
+        "title": "DreamCoder: bootstrapping inductive program synthesis with wake-sleep library learning",
+        "author": "Ellis, Kevin and Wong, Catherine and Nye, Maxwell and Sablé-Meyer, Mathias and Morales, Lucas and Hewitt, Luke and Cary, Luc and Solar-Lezama, Armando and Tenenbaum, Joshua B.",
+        "year": "2021",
+        "doi": "10.1145/3453483.3454080",
+        "url": "https://doi.org/10.1145/3453483.3454080",
+        "booktitle": "Proceedings of the 42nd ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+        "pages": "835--850"
+      },
+      "use": "Learns reusable program libraries and a search guide.",
+      "limitation": "Library construction has a cost; compression does not replace missing evidence.",
+      "reading_scope": "Wake search, sleep/library abstraction, recognition model, and ablations.",
+      "metadata_check_date": "2026-10-17",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "mao2022pdsketch",
+      "category": "Skill representations",
+      "citation": {
+        "type": "inproceedings",
+        "title": "PDSketch: Integrated Domain Programming, Learning, and Planning",
+        "author": "Mao, Jiayuan and Lozano-Pérez, Tomás and Tenenbaum, Joshua B. and Kaelbling, Leslie Pack",
+        "year": "2022",
+        "booktitle": "Advances in Neural Information Processing Systems",
+        "volume": "35",
+        "url": "https://pdsketch.csail.mit.edu/",
+        "note": "Author PDF has title variant: Integrated Planning Domain Programming and Learning"
+      },
+      "use": "Uses supplied relational structure to connect model learning and planning.",
+      "limitation": "Separate learned grounding from given vocabulary and constraints.",
+      "reading_scope": "Section 2 and Section 3.1, including PDS-Base, PDS-Abs, and PDS-Rob.",
+      "metadata_check_date": "2026-10-17",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "yan2018logged",
+      "category": "Logged evidence and additional queries",
+      "citation": {
+        "type": "inproceedings",
+        "title": "Active Learning with Logged Data",
+        "author": "Yan, Songbai and Chaudhuri, Kamalika and Javidi, Tara",
+        "year": "2018",
+        "booktitle": "Proceedings of ICML",
+        "series": "PMLR",
+        "volume": "80",
+        "pages": "5521--5530",
+        "url": "https://proceedings.mlr.press/v80/yan18a.html"
+      },
+      "use": "Uses logged coverage to guide additional label queries.",
+      "limitation": "Assumes known logging propensities and visible unlabeled contexts.",
+      "reading_scope": "Sections 2.1-4.3, Algorithm 1, Theorems 1 and 3, and experimental controls.",
+      "metadata_check_date": "2026-10-17",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "agrawal2023offline",
+      "category": "Logged evidence and additional queries",
+      "citation": {
+        "type": "misc",
+        "title": "Optimal Best-Arm Identification in Bandits with Access to Offline Data",
+        "author": "Agrawal, Shubhada and Juneja, Sandeep and Shanmugam, Karthikeyan and Suggala, Arun Sai",
+        "year": "2023",
+        "eprint": "2306.09048",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2306.09048v1",
+        "note": "Analysis pinned to version 1"
+      },
+      "use": "Characterizes additional identification samples given offline arm counts.",
+      "limitation": "Guarantees are joint over historical and online randomness.",
+      "reading_scope": "Section 2, Theorem 2.1, Algorithm 1, Theorem 3.3, and the confidence discussion.",
+      "metadata_check_date": "2026-10-17",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "yang2025biased",
+      "category": "Logged evidence and additional queries",
+      "citation": {
+        "type": "inproceedings",
+        "title": "Best Arm Identification with Possibly Biased Offline Data",
+        "author": "Yang, Le and Tan, Vincent Y. F. and Cheung, Wang Chi",
+        "year": "2025",
+        "booktitle": "Proceedings of UAI",
+        "series": "PMLR",
+        "volume": "286",
+        "pages": "4715--4730",
+        "url": "https://proceedings.mlr.press/v286/yang25b.html"
+      },
+      "use": "Combines offline and online observations with bias correction.",
+      "limitation": "Requires valid bias bounds.",
+      "reading_scope": "Sections 2-5, Proposition 3.1, Algorithm 1, Theorems 4.1 and 5.1, and bias-misspecification experiments.",
+      "metadata_check_date": "2026-10-17",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "konyushkova2021aops",
+      "category": "Logged evidence and additional queries",
+      "citation": {
+        "type": "inproceedings",
+        "title": "Active Offline Policy Selection",
+        "author": "Konyushkova, Ksenia and Chen, Yutian and Paine, Tom Le and Gulcehre, Caglar and Paduraru, Cosmin and Mankowitz, Daniel J. and Denil, Misha and de Freitas, Nando",
+        "year": "2021",
+        "booktitle": "Advances in Neural Information Processing Systems",
+        "volume": "34",
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/cec2346566ba8ecd04bfd992fd193fb3-Abstract.html",
+        "note": "Author spelling follows primary PDF"
+      },
+      "use": "Shares return estimates across fixed policies through behavioral similarity.",
+      "limitation": "Its objective is return-based policy selection.",
+      "reading_scope": "Sections 1.1-2.4, Equations 3-7, and Section 4 ablations. Author names follow the PDF.",
+      "metadata_check_date": "2026-10-30",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "javdani2014decision",
+      "category": "Decision targets and selective execution",
+      "citation": {
+        "type": "inproceedings",
+        "title": "Near Optimal Bayesian Active Learning for Decision Making",
+        "author": "Javdani, Shervin and Chen, Yuxin and Karbasi, Amin and Krause, Andreas and Bagnell, Drew and Srinivasa, Siddhartha",
+        "year": "2014",
+        "booktitle": "Proceedings of AISTATS",
+        "series": "PMLR",
+        "volume": "33",
+        "pages": "430--438",
+        "url": "https://proceedings.mlr.press/v33/javdani14.html"
+      },
+      "use": "Stops when remaining hypotheses share a valid decision.",
+      "limitation": "Approximation guarantees require the stated testing and structural assumptions.",
+      "reading_scope": "Sections 2-4, Theorems 1-3, and the hyperedge-cut construction.",
+      "metadata_check_date": "2026-10-17",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "goel2026stop",
+      "category": "Decision targets and selective execution",
+      "citation": {
+        "type": "misc",
+        "title": "Learning When to Stop: Selective Imitation Learning Under Arbitrary Dynamics Shift",
+        "author": "Goel, Surbhi and Pei, Jonathan and Wang, James",
+        "year": "2026",
+        "eprint": "2605.09183",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2605.09183v2",
+        "note": "Analysis pinned to version 2"
+      },
+      "use": "Learns stopping rules under dynamics shift and permits expert handoff.",
+      "limitation": "Requires source action labels and target expert state trajectories.",
+      "reading_scope": "Sections 2-4.3 and Section 5; especially Section 4.2, Definition 4, Lemma 4.2, and Corollary 4.3. Pinned to arXiv v2.",
+      "metadata_check_date": "2026-10-17",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "huang2026certification",
+      "category": "Decision targets and selective execution",
+      "citation": {
+        "type": "misc",
+        "title": "Self-Certification of Representation Adequacy: Sequential Certification at Minimum Task Loss",
+        "author": "Huang, Zijie",
+        "year": "2026",
+        "eprint": "2608.02267",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2608.02267v2",
+        "note": "Analysis pinned to version 2; preprint"
+      },
+      "use": "Analyzes sequential certification costs in specified finite environment classes.",
+      "limitation": "Requires known feedback models and identifiability conditions.",
+      "reading_scope": "Sections 2-5, Model M1, Theorems 8 and 9, and Proposition 11. Preprint pinned to v2; no full audit of the 102-page proof material.",
+      "metadata_check_date": "2026-10-17",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "goel2026noise",
+      "category": "Decision targets and selective execution",
+      "citation": {
+        "type": "inproceedings",
+        "title": "Testing Noise Assumptions of Learning Algorithms",
+        "author": "Goel, Surbhi and Klivans, Adam R. and Stavropoulos, Konstantinos and Vasilyan, Arsen",
+        "year": "2026",
+        "booktitle": "Proceedings of COLT",
+        "series": "PMLR",
+        "volume": "336",
+        "pages": "2804--2853",
+        "url": "https://proceedings.mlr.press/v336/goel26a.html",
+        "note": "Primary text checked against arXiv:2501.09189v3"
+      },
+      "use": "Tests learning assumptions before accepting a model.",
+      "limitation": "Guarantees depend on the hypothesis class and noise model.",
+      "reading_scope": "Definition 1.3, Theorem 2.7, and Table 1. COLT 2026 publication; earlier arXiv record begins in 2025.",
+      "metadata_check_date": "2026-10-17",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "goel2024tolerant",
+      "category": "Decision targets and selective execution",
+      "citation": {
+        "type": "inproceedings",
+        "title": "Tolerant Algorithms for Learning with Arbitrary Covariate Shift",
+        "author": "Goel, Surbhi and Shetty, Abhishek and Stavropoulos, Konstantinos and Vasilyan, Arsen",
+        "year": "2024",
+        "booktitle": "Advances in Neural Information Processing Systems",
+        "volume": "37",
+        "url": "https://arxiv.org/abs/2406.02742"
+      },
+      "use": "Studies selective learning under covariate shift.",
+      "limitation": "Changing environment dynamics requires a separate analysis.",
+      "reading_scope": "PQ/TDS definitions and assumptions of spectral outlier removal.",
+      "metadata_check_date": "2026-10-17",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "stern2017safe",
+      "category": "Relational action models and exploration",
+      "citation": {
+        "type": "inproceedings",
+        "title": "Efficient, Safe, and Probably Approximately Complete Learning of Action Models",
+        "author": "Stern, Roni and Juba, Brendan",
+        "year": "2017",
+        "booktitle": "Proceedings of IJCAI",
+        "pages": "4405--4411",
+        "doi": "10.24963/ijcai.2017/615",
+        "url": "https://www.ijcai.org/Proceedings/2017/615"
+      },
+      "use": "Learns conservative action models from successful transitions.",
+      "limitation": "Approximate completeness concerns the sampling distribution.",
+      "reading_scope": "Conservative construction, Theorems 1 and 2, sampling assumptions, and incompleteness discussion.",
+      "metadata_check_date": "2026-10-17",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "juba2021lifted",
+      "category": "Relational action models and exploration",
+      "citation": {
+        "type": "inproceedings",
+        "title": "Safe Learning of Lifted Action Models",
+        "author": "Juba, Brendan and Le, Hai S. and Stern, Roni",
+        "year": "2021",
+        "booktitle": "Proceedings of KR",
+        "pages": "379--389",
+        "url": "https://proceedings.kr.org/2021/36/"
+      },
+      "use": "Shares action rules across object bindings.",
+      "limitation": "SAM and E-SAM impose different binding conditions.",
+      "reading_scope": "Sections 4-6, Definitions 6 and 7, Algorithms 1-3, Theorems 3-7, and Section 9.",
+      "metadata_check_date": "2026-10-17",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "deng2026stochastic",
+      "category": "Relational action models and exploration",
+      "citation": {
+        "type": "inproceedings",
+        "title": "Stochastic Safe Action Model Learning",
+        "author": "Deng, Zihao and Juba, Brendan",
+        "year": "2026",
+        "booktitle": "Proceedings of COLT",
+        "series": "PMLR",
+        "volume": "336",
+        "pages": "1715--1736",
+        "url": "https://proceedings.mlr.press/v336/deng26a.html"
+      },
+      "use": "Studies safe learning with stochastic action effects.",
+      "limitation": "Assumes finite effect support and specific structural conditions.",
+      "reading_scope": "Section 2.1, Sections 3-5, Algorithm 1, and the treatment of missing moment entries.",
+      "metadata_check_date": "2026-10-17",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "verma2021questions",
+      "category": "Relational action models and exploration",
+      "citation": {
+        "type": "inproceedings",
+        "title": "Asking the Right Questions: Learning Interpretable Action Models Through Query Answering",
+        "author": "Verma, Pulkit and Marpally, Shashank Rao and Srivastava, Siddharth",
+        "year": "2021",
+        "booktitle": "Proceedings of AAAI",
+        "url": "https://doi.org/10.1609/aaai.v35i13.17428",
+        "doi": "10.1609/aaai.v35i13.17428",
+        "volume": "35",
+        "number": "13",
+        "pages": "12024--12033"
+      },
+      "use": "Uses distinguishing plans to identify interpretable action models.",
+      "limitation": "Query execution and feedback access must be specified.",
+      "reading_scope": "Sections 3-4, Definitions 1-5, Algorithms 1 and 2, query synthesis, and correctness conditions.",
+      "metadata_check_date": "2026-10-30",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "noseworthy2021apf",
+      "category": "Relational action models and exploration",
+      "citation": {
+        "type": "inproceedings",
+        "title": "Active Learning of Abstract Plan Feasibility",
+        "author": "Noseworthy, Michael and Brand, Isaiah and Moses, Caris and Castro, Sebastian and Kaelbling, Leslie and Lozano-Pérez, Tomás and Roy, Nicholas",
+        "year": "2021",
+        "booktitle": "Robotics: Science and Systems",
+        "url": "https://doi.org/10.15607/RSS.2021.XVII.043",
+        "doi": "10.15607/RSS.2021.XVII.043",
+        "note": "Author order follows the RSS publication record and Crossref. The stored manuscript reverses Brand and Moses; the first three authors are marked as equal contributors in both records"
+      },
+      "use": "Uses active robot experiments to learn abstract plan feasibility.",
+      "limitation": "Accounts for partial execution and test reachability.",
+      "reading_scope": "Sections II-III, Equations 2 and 8, and Section V ablations. Citation order follows RSS/Crossref; the stored manuscript orders the same equal-contribution authors differently.",
+      "metadata_check_date": "2026-10-30",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "li2023embodied",
+      "category": "Relational action models and exploration",
+      "citation": {
+        "type": "inproceedings",
+        "title": "Embodied Active Learning of Relational State Abstractions for Bilevel Planning",
+        "author": "Li, Amber and Silver, Tom",
+        "year": "2023",
+        "booktitle": "Proceedings of CoLLAs",
+        "series": "PMLR",
+        "volume": "232",
+        "pages": "358--375",
+        "url": "https://proceedings.mlr.press/v232/li23a.html"
+      },
+      "use": "Actively learns relational abstractions for bilevel planning.",
+      "limitation": "Assumes a vocabulary, simulator, and noiseless labels.",
+      "reading_scope": "Sections 2-5, Algorithm 1, baseline definitions, and initialization requirements.",
+      "metadata_check_date": "2026-10-17",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "chitnis2021glib",
+      "category": "Relational action models and exploration",
+      "citation": {
+        "type": "inproceedings",
+        "title": "GLIB: Efficient Exploration for Relational Model-Based Reinforcement Learning via Goal-Literal Babbling",
+        "author": "Chitnis, Rohan and Silver, Tom and Tenenbaum, Joshua and Kaelbling, Leslie Pack and Lozano-Pérez, Tomás",
+        "year": "2021",
+        "booktitle": "Proceedings of AAAI",
+        "url": "https://doi.org/10.1609/aaai.v35i13.17400",
+        "doi": "10.1609/aaai.v35i13.17400",
+        "volume": "35",
+        "number": "13",
+        "pages": "11782--11791"
+      },
+      "use": "Explores relational models by planning toward sampled goal literals.",
+      "limitation": "Convergence requires the stated exploration and environment conditions.",
+      "reading_scope": "Sections 4-6, Definitions 1-4, Theorem 1, Corollary 1, and Appendix C.",
+      "metadata_check_date": "2026-10-30",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "tang2026trajectory",
+      "category": "Memory selection and compression",
+      "citation": {
+        "type": "misc",
+        "title": "The Trap of Trajectory: Towards Understanding and Mitigating Spurious Correlations in Agentic Memory",
+        "author": "Tang, Luoxi and Vaje, Rupali Rajendra and Meng, Yuqiao and Narkar, Sakshi Sunil and Ma, Weicheng and Ding, Zeyu and Zhang, Dazheng and Xi, Zhaohan",
+        "year": "2026",
+        "eprint": "2605.09330",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2605.09330v1"
+      },
+      "use": "Studies spurious correlations in agent memory, including outcome-filter bypass.",
+      "limitation": "Retrieval alone cannot supply unobserved causal evidence.",
+      "reading_scope": "Sections 3-4, Algorithm 1, and Appendix C.2, C.4, C.7, and C.10. Preprint pinned to v1.",
+      "metadata_check_date": "2026-10-17",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "zou2026decision",
+      "category": "Memory selection and compression",
+      "citation": {
+        "type": "misc",
+        "title": "Remember the Decision, Not the Description: A Rate-Distortion Framework for Agent Memory",
+        "author": "Zou, Mingxi and Guo, Zhihan and Liang, Langzhang and Wang, Zhuo and Wang, Qifan and Wen, Qingsong and King, Irwin and Qu, Lizhen and Xu, Zenglin",
+        "year": "2026",
+        "eprint": "2605.10870",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2605.10870v1"
+      },
+      "use": "Allocates memory according to decision loss and includes certification exploration.",
+      "limitation": "Its objective is regret under a memory budget.",
+      "reading_scope": "Sections 3-4, Theorems 1-5, Appendix C.1-C.5, Algorithms 2 and 3, and the experimental setup. Preprint pinned to v1.",
+      "metadata_check_date": "2026-10-17",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "ross2011dagger",
+      "category": "Feedback and imitation baselines",
+      "citation": {
+        "type": "inproceedings",
+        "title": "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning",
+        "author": "Ross, Stéphane and Gordon, Geoffrey J. and Bagnell, J. Andrew",
+        "booktitle": "Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics",
+        "series": "Proceedings of Machine Learning Research",
+        "volume": "15",
+        "pages": "627--635",
+        "year": "2011",
+        "url": "https://proceedings.mlr.press/v15/ross11a.html",
+        "note": "Author names follow the primary PDF; the publication page uses shorter given names"
+      },
+      "use": "Learns from expert labels on states visited by the learner.",
+      "limitation": "Policy updates change execution ability.",
+      "reading_scope": "Publisher metadata, local title/abstract, and dataset-aggregation overview; no proof audit or reproduction in this pass.",
+      "metadata_check_date": "2026-10-30",
+      "reading_level": "abstract and method overview"
+    },
+    {
+      "key": "judah2014active",
+      "category": "Feedback and imitation baselines",
+      "citation": {
+        "type": "article",
+        "title": "Active Imitation Learning: Formal and Practical Reductions to {I.I.D.} Learning",
+        "author": "Judah, Kshitij and Fern, Alan P. and Dietterich, Thomas G. and Tadepalli, Prasad",
+        "journal": "Journal of Machine Learning Research",
+        "volume": "15",
+        "number": "120",
+        "pages": "4105--4143",
+        "year": "2014",
+        "url": "https://www.jmlr.org/papers/v15/judah14a.html"
+      },
+      "use": "Reduces expert queries through active state selection.",
+      "limitation": "The reductions rely on simulator and learning-oracle assumptions.",
+      "reading_scope": "Publisher metadata, local title/abstract, and simulator/query setup; no proof audit or reproduction in this pass.",
+      "metadata_check_date": "2026-10-30",
+      "reading_level": "abstract and method overview"
+    },
+    {
+      "key": "zhang2017safe",
+      "category": "Feedback and imitation baselines",
+      "citation": {
+        "type": "inproceedings",
+        "title": "Query-Efficient Imitation Learning for End-to-End Simulated Driving",
+        "author": "Zhang, Jiakai and Cho, Kyunghyun",
+        "booktitle": "Proceedings of the AAAI Conference on Artificial Intelligence",
+        "volume": "31",
+        "number": "1",
+        "year": "2017",
+        "doi": "10.1609/aaai.v31i1.10857",
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/10857"
+      },
+      "use": "Uses a learned action-deviation classifier to select expert queries and control.",
+      "limitation": "Classifier accuracy alone does not certify reuse under arbitrary shift.",
+      "reading_scope": "Publisher and Crossref metadata, local title/abstract, and safety-policy overview; no proof audit or reproduction in this pass.",
+      "metadata_check_date": "2026-10-30",
+      "reading_level": "abstract and method overview"
+    },
+    {
+      "key": "kearns1998sq",
+      "category": "Learning-theory background",
+      "citation": {
+        "type": "article",
+        "title": "Efficient noise-tolerant learning from statistical queries",
+        "author": "Kearns, Michael",
+        "year": "1998",
+        "doi": "10.1145/293347.293351",
+        "url": "https://doi.org/10.1145/293347.293351",
+        "journal": "Journal of the ACM",
+        "volume": "45",
+        "number": "6",
+        "pages": "983--1006"
+      },
+      "use": "Separates sample, query, and computational requirements for learning.",
+      "limitation": "STAT results apply to statistical-query access.",
+      "reading_scope": "Section 2 definitions, Section 4 STAT access, and Section 7 separation/query-precision discussion.",
+      "metadata_check_date": "2026-10-17",
+      "reading_level": "core sections (prior audit)"
+    },
+    {
+      "key": "angluin1988queries",
+      "category": "Learning-theory background",
+      "citation": {
+        "type": "article",
+        "title": "Queries and Concept Learning",
+        "author": "Angluin, Dana",
+        "year": "1988",
+        "doi": "10.1023/a:1022821128753",
+        "url": "https://doi.org/10.1023/a:1022821128753",
+        "journal": "Machine Learning",
+        "volume": "2",
+        "number": "4",
+        "pages": "319--342"
+      },
+      "use": "Distinguishes membership, equivalence, and counterexample queries.",
+      "limitation": "These interfaces provide different feedback and are not interchangeable.",
+      "reading_scope": "Metadata, publication abstract, and available excerpts in the prior audit; no full-text core-section reading recorded.",
+      "metadata_check_date": "2026-10-17",
+      "reading_level": "metadata/abstract only"
+    },
+    {
+      "key": "kearns1994learning",
+      "category": "Learning-theory background",
+      "citation": {
+        "type": "book",
+        "title": "An Introduction to Computational Learning Theory",
+        "author": "Kearns, Michael J. and Vazirani, Umesh",
+        "year": "1994",
+        "publisher": "MIT Press",
+        "isbn": "9780262111935",
+        "url": "https://mitpress.mit.edu/9780262111935/an-introduction-to-computational-learning-theory/"
+      },
+      "use": "Background on PAC learning, query access, and computational constraints.",
+      "limitation": "Bounds require the assumptions of the specific learning problem.",
+      "reading_scope": "Publisher metadata and contents only in the prior audit; no local full text in the indexed sources.",
+      "metadata_check_date": "2026-10-17",
+      "reading_level": "metadata/abstract only"
+    },
+    {
+      "key": "kleinberg2024generation",
+      "category": "Learning-theory background",
+      "citation": {
+        "type": "inproceedings",
+        "title": "Language Generation in the Limit",
+        "author": "Kleinberg, Jon and Mullainathan, Sendhil",
+        "year": "2024",
+        "booktitle": "Advances in Neural Information Processing Systems",
+        "volume": "37",
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/7988e9b3876ad689e921ce05d711442f-Abstract-Conference.html"
+      },
+      "use": "Separates language generation from complete identification in the limit.",
+      "limitation": "The result supplies no finite-sample bound for action learning.",
+      "reading_scope": "Official publication metadata and abstract in the prior audit; no full-text core-section reading recorded.",
+      "metadata_check_date": "2026-10-17",
+      "reading_level": "metadata/abstract only"
+    }
+  ]
+}

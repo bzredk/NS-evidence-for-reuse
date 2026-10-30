@@ -1,0 +1,170 @@
+[
+  {
+    "key": "kearns1998sq",
+    "verification": "Crossref metadata + primary paper/official source",
+    "doi": "10.1145/293347.293351",
+    "metadata_check_date": "2026-10-17"
+  },
+  {
+    "key": "lake2015bpl",
+    "verification": "Crossref metadata + primary paper/official source",
+    "doi": "10.1126/science.aab3050",
+    "metadata_check_date": "2026-10-17"
+  },
+  {
+    "key": "ellis2021dreamcoder",
+    "verification": "Crossref metadata + primary paper/official source",
+    "doi": "10.1145/3453483.3454080",
+    "metadata_check_date": "2026-10-17"
+  },
+  {
+    "key": "angluin1988queries",
+    "verification": "Crossref metadata + primary paper/official source",
+    "doi": "10.1023/A:1022821128753",
+    "metadata_check_date": "2026-10-17"
+  },
+  {
+    "key": "kearns1994learning",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://mitpress.mit.edu/9780262111935/an-introduction-to-computational-learning-theory/",
+    "metadata_check_date": "2026-10-17"
+  },
+  {
+    "key": "javdani2014decision",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://proceedings.mlr.press/v33/javdani14.html",
+    "metadata_check_date": "2026-10-17"
+  },
+  {
+    "key": "goel2026noise",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://proceedings.mlr.press/v336/goel26a.html",
+    "metadata_check_date": "2026-10-17"
+  },
+  {
+    "key": "goel2026stop",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://arxiv.org/abs/2605.09183v2",
+    "metadata_check_date": "2026-10-17"
+  },
+  {
+    "key": "mao2022pdsketch",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://pdsketch.csail.mit.edu/",
+    "metadata_check_date": "2026-10-17"
+  },
+  {
+    "key": "goel2024tolerant",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://arxiv.org/abs/2406.02742",
+    "metadata_check_date": "2026-10-17"
+  },
+  {
+    "key": "stern2017safe",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://www.ijcai.org/Proceedings/2017/615",
+    "metadata_check_date": "2026-10-17"
+  },
+  {
+    "key": "deng2026stochastic",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://proceedings.mlr.press/v336/deng26a.html",
+    "metadata_check_date": "2026-10-17"
+  },
+  {
+    "key": "kleinberg2024generation",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/7988e9b3876ad689e921ce05d711442f-Abstract-Conference.html",
+    "metadata_check_date": "2026-10-17"
+  },
+  {
+    "key": "tang2026trajectory",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://arxiv.org/abs/2605.09330v1",
+    "metadata_check_date": "2026-10-17"
+  },
+  {
+    "key": "zou2026decision",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://arxiv.org/abs/2605.10870v1",
+    "metadata_check_date": "2026-10-17"
+  },
+  {
+    "key": "yan2018logged",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://proceedings.mlr.press/v80/yan18a.html",
+    "metadata_check_date": "2026-10-17"
+  },
+  {
+    "key": "agrawal2023offline",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://arxiv.org/abs/2306.09048v1",
+    "metadata_check_date": "2026-10-17"
+  },
+  {
+    "key": "yang2025biased",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://proceedings.mlr.press/v286/yang25b.html",
+    "metadata_check_date": "2026-10-17"
+  },
+  {
+    "key": "huang2026certification",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://arxiv.org/abs/2608.02267v2",
+    "metadata_check_date": "2026-10-17"
+  },
+  {
+    "key": "konyushkova2021aops",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/cec2346566ba8ecd04bfd992fd193fb3-Abstract.html",
+    "metadata_check_date": "2026-10-30"
+  },
+  {
+    "key": "juba2021lifted",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://proceedings.kr.org/2021/36/",
+    "metadata_check_date": "2026-10-17"
+  },
+  {
+    "key": "verma2021questions",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://doi.org/10.1609/aaai.v35i13.17428",
+    "metadata_check_date": "2026-10-30"
+  },
+  {
+    "key": "noseworthy2021apf",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://doi.org/10.15607/RSS.2021.XVII.043",
+    "metadata_check_date": "2026-10-30"
+  },
+  {
+    "key": "li2023embodied",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://proceedings.mlr.press/v232/li23a.html",
+    "metadata_check_date": "2026-10-17"
+  },
+  {
+    "key": "chitnis2021glib",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://doi.org/10.1609/aaai.v35i13.17400",
+    "metadata_check_date": "2026-10-30"
+  },
+  {
+    "key": "ross2011dagger",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://proceedings.mlr.press/v15/ross11a.html",
+    "metadata_check_date": "2026-10-30"
+  },
+  {
+    "key": "judah2014active",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://www.jmlr.org/papers/v15/judah14a.html",
+    "metadata_check_date": "2026-10-30"
+  },
+  {
+    "key": "zhang2017safe",
+    "verification": "primary publication or author page; reading depth in literature/verified_reading_map.md",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/10857",
+    "metadata_check_date": "2026-10-30"
+  }
+]

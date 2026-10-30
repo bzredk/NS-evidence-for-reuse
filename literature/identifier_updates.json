@@ -1,0 +1,51 @@
+{
+  "konyushkova2021aops": {
+    "fields": {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/cec2346566ba8ecd04bfd992fd193fb3-Abstract.html"
+    },
+    "sources": [
+      "https://proceedings.neurips.cc/paper_files/paper/2021/hash/cec2346566ba8ecd04bfd992fd193fb3-Abstract.html"
+    ],
+    "note": "Replaced a direct file URL with the official publication record. The recorded author spelling follows the primary manuscript; the proceedings HTML has spelling and given-name differences."
+  },
+  "verma2021questions": {
+    "fields": {
+      "doi": "10.1609/aaai.v35i13.17428",
+      "url": "https://doi.org/10.1609/aaai.v35i13.17428",
+      "volume": "35",
+      "number": "13",
+      "pages": "12024--12033"
+    },
+    "sources": [
+      "https://ojs.aaai.org/index.php/AAAI/article/view/17428",
+      "https://api.crossref.org/works/10.1609/aaai.v35i13.17428"
+    ],
+    "note": "Title, authors, year, volume, issue, pages, and DOI agree across the publisher record and Crossref."
+  },
+  "noseworthy2021apf": {
+    "fields": {
+      "author": "Noseworthy, Michael and Brand, Isaiah and Moses, Caris and Castro, Sebastian and Kaelbling, Leslie and Lozano-Pérez, Tomás and Roy, Nicholas",
+      "doi": "10.15607/RSS.2021.XVII.043",
+      "url": "https://doi.org/10.15607/RSS.2021.XVII.043",
+      "note": "Author order follows the RSS publication record and Crossref. The stored manuscript reverses Brand and Moses; the first three authors are marked as equal contributors in both records"
+    },
+    "sources": [
+      "https://www.roboticsproceedings.org/rss17/p043.html",
+      "https://api.crossref.org/works/10.15607/RSS.2021.XVII.043"
+    ],
+    "note": "Corrected author order to the DOI/proceedings record. The differing order in the stored manuscript is retained as an explicit version discrepancy."
+  },
+  "chitnis2021glib": {
+    "fields": {
+      "doi": "10.1609/aaai.v35i13.17400",
+      "url": "https://doi.org/10.1609/aaai.v35i13.17400",
+      "volume": "35",
+      "number": "13",
+      "pages": "11782--11791"
+    },
+    "sources": [
+      "https://ojs.aaai.org/index.php/AAAI/article/view/17400"
+    ],
+    "note": "DOI and publication fields checked against the official AAAI record. Crossref retrieval was unavailable in this pass."
+  }
+}
